@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 🌸</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="chill.jpeg" type="image/x-icon">
+    <style>
+        
+        .menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .menu-icon {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 24px;
+            width: 30px;
+        }
+
+        .menu-icon div {
+            height: 4px;
+            background-color: black;
+            border-radius: 2px;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background-color: white;
+            border: 1px solid #347f96;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 0;
+            display: block;
+        }
+
+        .menu.active .dropdown {
+            display: block;
+        }
+        #about {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .circle-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #beaeae; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .circle-image img {
+            width: 117%;
+            height: 117%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu" onclick="toggleMenu()">
+        <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="dropdown">
+            <a href="jem.html">Jemarie Ochea</a>
+            <a href="juliene.html">Juliene kaye Aviso</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html> 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about us">About Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <div class="circle-image">>
+                <img src="och,aviso.jpeg" alt="About Us Image">
+            </div>
+            <div>
+                <h1>About Us</h1>
+                <p>Hi! We are students of Cebu Eastern College, Who love's to create a wonderful and creative websites. </p>
+            </div>
+        </section>
+        <section id="blog">
+            <h1>Blog</h1>
+            <article>
+                <h2>Embedded YouTube Video Learning basic HTML tutorial</h2>
+                <p>&#128269; We love programming in HTML, C++, and CSS.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FQdaUv95mR8?si=rY_ZWa7TGUB6ZEdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h1>
+                        The University Location
+                    </h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d825.2537750382916!2d123.89602888434389!3d10.294529563842085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1741792711133!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Clickable Image Map</h2>
+            <img src="cecmap.jpg.png" usemap="#workmap">
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" href="https://example.com" alt="Example Link">
+                <area shape="circle" coords="330,307,44" href="https://example2.com" alt="Another Link">
+            </map>
+        </section>
+
+        <aside>
+            <h2>Favorite Emojis 😃</h2>
+            <ul>
+                <li>&#128512; Smiley Face</li>
+                <li>&#128640; Rocket</li>
+                <li>&#127881; Party Popper</li>
+                <li>&#127760; Planet</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>Connect with us on  <a href="https://github.com/">GitHub</a> | &copy; 2025 Our Portfolio</p>
+    </footer>
+</body>
+</html>
